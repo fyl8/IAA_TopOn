@@ -1,8 +1,9 @@
 plugins {
     alias(libs.plugins.android.library)
     id 'maven-publish'
+    id 'com.google.gms.google-services'
 }
-group = 'com.github.iaa'
+group = 'com.github.iaa.topon'
 version = '1.0.0'
 android {
     namespace 'io.iaa.topon.library'
@@ -117,8 +118,8 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.github.iaa'
-                artifactId = 'android-iaa-sdk'
+                groupId = 'com.github.iaa.topon'
+                artifactId = 'android-iaa-topon'
                 version = '0.1'
             }
         }
