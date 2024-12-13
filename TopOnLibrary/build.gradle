@@ -21,9 +21,10 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
+
 }
 
 dependencies {
@@ -33,4 +34,78 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    //Anythink (Necessary)
+    api "com.anythink.sdk:core-tpn:6.4.30"
+    api "com.anythink.sdk:nativead-tpn:6.4.30"
+    api "com.anythink.sdk:banner-tpn:6.4.30"
+    api "com.anythink.sdk:interstitial-tpn:6.4.30"
+    api "com.anythink.sdk:rewardedvideo-tpn:6.4.30"
+    api "com.anythink.sdk:splash-tpn:6.4.30"
+    //Androidx (Necessary)
+    api "androidx.appcompat:appcompat:1.1.0"
+    api "androidx.browser:browser:1.4.0"
+    //Vungle
+    api "com.anythink.sdk:adapter-tpn-vungle:6.4.30"
+    api "com.vungle:vungle-ads:7.4.2"
+    api "com.google.android.gms:play-services-basement:18.1.0"
+    api "com.google.android.gms:play-services-ads-identifier:18.0.1"
+    //UnityAds
+    api "com.anythink.sdk:adapter-tpn-unityads:6.4.30"
+    api "com.unity3d.ads:unity-ads:4.12.4"
+    //Ironsource
+    api "com.anythink.sdk:adapter-tpn-ironsource:6.4.30"
+    api "com.ironsource.sdk:mediationsdk:8.4.0"
+    api "com.google.android.gms:play-services-appset:16.0.2"
+    api "com.google.android.gms:play-services-ads-identifier:18.0.1"
+    api "com.google.android.gms:play-services-basement:18.1.0"
+    //Bigo
+    api "com.anythink.sdk:adapter-tpn-bigo:6.4.30"
+    api "com.bigossp:bigo-ads:5.0.2"
+    //Pangle
+    api "com.anythink.sdk:adapter-tpn-pangle-nonchina:6.4.30"
+    api "com.pangle.global:ads-sdk:6.3.0.4"
+    api "com.google.android.gms:play-services-ads-identifier:18.0.1"
+    //Admob
+    api "com.anythink.sdk:adapter-tpn-admob:6.4.30"
+    api "com.google.android.gms:play-services-ads:23.4.0"
+    //Inmobi
+    api "com.anythink.sdk:adapter-tpn-inmobi:6.4.30"
+    api "com.inmobi.monetization:inmobi-ads-kotlin:10.7.8"
+    //AppLovin
+    api "com.anythink.sdk:adapter-tpn-applovin:6.4.30"
+    api "com.applovin:applovin-sdk:13.0.1"
+    //Mintegral
+    api "com.anythink.sdk:adapter-tpn-mintegral-nonchina:6.4.30"
+    api "com.mbridge.msdk.oversea:mbridge_android_sdk:16.8.81"
+    api "androidx.recyclerview:recyclerview:1.1.0"
+    //Chartboost
+    api "com.anythink.sdk:adapter-tpn-chartboost:6.4.30"
+    api "com.chartboost:chartboost-sdk:9.7.0"
+    api "com.chartboost:chartboost-mediation-sdk:4.9.1"
+    api "com.chartboost:chartboost-mediation-adapter-chartboost:4.9.7.0.0"
+    api "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0"
+    api "com.squareup.okhttp3:logging-interceptor:4.10.0"
+    api "com.squareup.okhttp3:okhttp:4.10.0"
+    api "com.squareup.retrofit2:converter-scalars:2.9.0"
+    api "com.squareup.retrofit2:retrofit:2.9.0"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1"
+    api "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"
+    //Fyber
+    api "com.anythink.sdk:adapter-tpn-fyber:6.4.30"
+    api "com.fyber:marketplace-sdk:8.3.3"
+    api "com.google.android.gms:play-services-ads-identifier:18.0.1"
+    //Tramini
+    api "com.anythink.sdk:tramini-plugin-tpn:6.4.30"
+
+    //Firebase
+    api(platform("com.google.firebase:firebase-bom:33.7.0"))
+    api("com.google.firebase:firebase-analytics")
+    //Adjust
+    api 'com.adjust.sdk:adjust-android:5.0.2'
+    api 'com.adjust.sdk:adjust-android-webbridge:5.0.2'
+
+    api 'com.android.installreferrer:installreferrer:2.2'
+//    api 'com.google.android.gms:play-services-ads-identifier:18.2.0'
+
 }
